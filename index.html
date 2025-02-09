@@ -6,206 +6,377 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>Title</title>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/redesign-styles.css">
 </head>
 
 <body>
-	<section>
-
-
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3">
-					Left Block
+	<header class="header">
+		<div class="vd-wrapper">
+			<div class="header__row">
+				<div class="aside">
+					<a href="#" class="header__logo">
+						<img src="img/logo.png" alt="logo" class="header__logo-img_desktop">
+						<img src="img/logo-light.png" alt="logo" class="header__logo-img_mob">
+					</a>
 				</div>
-				<div class="col-md-6 hide-on-mob">Center Block</div>
-				<div class="col-md-3">
-					Right Block
+
+				<div class="header__search">
+					<input type="text" class="header__search-input" placeholder="Search for games...">
+				</div>
+				<button class="header__log-out">Log Out</button>
+				<div class="balance">
+					<img src="img/icons/coins.svg" alt="balance">
+					<span>101</span>
 				</div>
 			</div>
 		</div>
-	</section>
+	</header>
+	<div class="vd-wrapper main-wrapper">
+		<div class="aside sidebar">
+			<div class="sidebar__sticky-content">
+				<div class="user-widget">
+					<div class="user-widget__photo">
+						<img src="img/user-photo.jpg" alt="user">
+					</div>
+					<div class="user-widget__name">
+						<span>Jacob</span>
+						<button class="btn_edit-name">
+						</button>
+					</div>
+					<div class="user-widget__balance">
+						<div>Your Balance:</div>
+						<div class="balance">
+							<img src="img/icons/coins.svg" alt="balance">
+							<span>1080</span>
+						</div>
+					</div>
 
-	<div class="show-on-mob">
-		<section class="daily">
-			<div class="daily__title">Daily Special</div>
-			<div class="daily__list">
-				<div class="daily-item">
-					<div class="daily-item__img">
-						<img src="img/game-1.png" alt="Jigsaw Game">
-						<div class="daily-item__title">Jigsaw Game</div>
-					</div>
-					<div class="daily-item__desc">Test your knowledge of the world countries.</div>
-					<div class="daily-item__nav">
-						<button class="btn">Play</button>
-						<div class="star-checkbox">
-							<input class="check-box" type="checkbox" id="star-1" name="Caller Voice" value="game-1">
-							<label for="star-1"></label>
+					<div class="user-widget__row">
+						<div class="user-widget-card">
+							<div class="user-widget-card__title">Credits</div>
+							<div class="user-widget-card__value">336</div>
+						</div>
+						<div class="user-widget-card">
+							<div class="user-widget-card__title">Spil</div>
+							<div class="user-widget-card__value">218</div>
 						</div>
 					</div>
 				</div>
-				<div class="daily-item">
-					<div class="daily-item__img">
-						<img src="img/game-2.png" alt="Word Game">
-						<div class="daily-item__title">Word Game</div>
-					</div>
-					<div class="daily-item__desc">Test your knowledge of the world countries.</div>
-					<div class="daily-item__nav">
-						<button class="btn">Play</button>
-						<div class="star-checkbox">
-							<input class="check-box" type="checkbox" id="star-2" name="Caller Voice" value="game-2">
-							<label for="star-2"></label>
-						</div>
-					</div>
-				</div>
-				<div class="daily-item">
-					<div class="daily-item__img">
-						<img src="img/game-1.png" alt="Jigsaw Game">
-						<div class="daily-item__title">Jigsaw Game</div>
-					</div>
-					<div class="daily-item__desc">Test your knowledge of the world countries.</div>
-					<div class="daily-item__nav">
-						<button class="btn">Play</button>
-						<div class="star-checkbox">
-							<input class="check-box" type="checkbox" id="star-3" name="Caller Voice" value="game-3">
-							<label for="star-3"></label>
-						</div>
-					</div>
-				</div>
-				<div class="daily-item">
-					<div class="daily-item__img">
-						<img src="img/game-2.png" alt="Word Game">
-						<div class="daily-item__title">Word Game</div>
-					</div>
-					<div class="daily-item__desc">Test your knowledge of the world countries.</div>
-					<div class="daily-item__nav">
-						<button class="btn">Play</button>
-						<div class="star-checkbox">
-							<input class="check-box" type="checkbox" id="star-4" name="Caller Voice" value="game-4">
-							<label for="star-4"></label>
-						</div>
-					</div>
-				</div>
-				<div class="daily-item">
-					<div class="daily-item__img">
-						<img src="img/game-2.png" alt="Word Game">
-						<div class="daily-item__title">Word Game</div>
-					</div>
-					<div class="daily-item__desc">Test your knowledge of the world countries.</div>
-					<div class="daily-item__nav">
-						<button class="btn">Play</button>
-						<div class="star-checkbox">
-							<input class="check-box" type="checkbox" id="star-5" name="Caller Voice" value="game-5">
-							<label for="star-5"></label>
-						</div>
-					</div>
+
+				<div class="toolbar">
+					<a href="#" class="toolbar-item active">
+						<div class="toolbar-item__icon toolbar-item__icon_games"></div>
+						<div class="toolbar-item__text"><span class="hide-on-mob">All</span> Games</div>
+					</a>
+					<a href="#" class="toolbar-item hide-on-mob">
+						<div class="toolbar-item__icon toolbar-item__icon_popular"></div>
+						<div class="toolbar-item__text">Popular</div>
+					</a>
+					<a href="#" class="toolbar-item">
+						<div class="toolbar-item__icon toolbar-item__icon_favorites"></div>
+						<div class="toolbar-item__text">Favorites</div>
+					</a>
+					<a href="#" class="toolbar-item">
+						<div class="toolbar-item__icon toolbar-item__icon_highscore"></div>
+						<div class="toolbar-item__text">Highscore</div>
+					</a>
+					<a href="#" class="toolbar-item">
+						<div class="toolbar-item__icon toolbar-item__icon_prizes"></div>
+						<div class="toolbar-item__text">Prizes</div>
+					</a>
 				</div>
 			</div>
-		</section>
-		<section class="games">
-			<div class="games__header">
-				<div class="games__title">Uundgåelige spil</div>
-				<div class="games__all">
-					Se alle
+		</div>
+		<div class="main">
+			<section class="banner">
+				<div class="banner__title">Crazy VIP Club <br>
+					Loyalty Program</div>
+				<div class="banner__text">
+					Petrificus mewing us crush daily knut. Us hedwig easy one red hungarian trevor fritters.
 				</div>
-			</div>
-			<div class="games-list">
-				<div class="game-item">
-					<div class="game-item__img">
-						<img src="img/game-1.png" alt="Jigsaw Game">
+				<a href="#" class="custom-btn banner__btn">Join</a>
+			</section>
+
+			<section class="daily">
+				<div class="daily__row">
+					<div class="daily__title">Daily Special</div>
+					<div class="daily__nav">
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
 					</div>
-					<div>
-						<div class="game-item__title">Jigsaw Game</div>
-						<div class="game-item__desc">Test your knowledge of the world countries.</div>
-						<div class="game-item__nav">
-							<button class="btn">Play</button>
-							<div class="star-checkbox">
-								<input class="check-box" type="checkbox" id="star-6" name="Caller Voice" value="game-6" checked>
-								<label for="star-6"></label>
+				</div>
+				<div class="daily__swiper">
+					<div class="swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="daily-item">
+									<div class="daily-item__img">
+										<img src="img/game-1.jpg" alt="Jigsaw Game">
+										<div class="daily-item__title">Jigsaw Game</div>
+									</div>
+									<div class="daily-item__desc">Test your knowledge of the world countries.</div>
+									<div class="daily-item__nav">
+										<a href="#" class="custom-btn">Play</a>
+										<div class="star-checkbox">
+											<input class="check-box" type="checkbox" id="star-1" name="game-name" value="game-1">
+											<label for="star-1"></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="daily-item">
+									<div class="daily-item__img">
+										<img src="img/game-2.jpg" alt="Word Game">
+										<div class="daily-item__title">Word Game</div>
+									</div>
+									<div class="daily-item__desc">Test your knowledge of the world countries.</div>
+									<div class="daily-item__nav">
+										<a href="#" class="custom-btn">Play</a>
+										<div class="star-checkbox">
+											<input class="check-box" type="checkbox" id="star-2" name="game-name" value="game-2">
+											<label for="star-2"></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="daily-item">
+									<div class="daily-item__img">
+										<img src="img/game-1.jpg" alt="Jigsaw Game">
+										<div class="daily-item__title">Jigsaw Game</div>
+									</div>
+									<div class="daily-item__desc">Test your knowledge of the world countries.</div>
+									<div class="daily-item__nav">
+										<a href="#" class="custom-btn">Play</a>
+										<div class="star-checkbox">
+											<input class="check-box" type="checkbox" id="star-3" name="game-name" value="game-3">
+											<label for="star-3"></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="daily-item">
+									<div class="daily-item__img">
+										<img src="img/game-2.jpg" alt="Word Game">
+										<div class="daily-item__title">Word Game</div>
+									</div>
+									<div class="daily-item__desc">Test your knowledge of the world countries.</div>
+									<div class="daily-item__nav">
+										<a href="#" class="custom-btn">Play</a>
+										<div class="star-checkbox">
+											<input class="check-box" type="checkbox" id="star-4" name="game-name" value="game-4">
+											<label for="star-4"></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="daily-item">
+									<div class="daily-item__img">
+										<img src="img/game-1.jpg" alt="Jigsaw Game">
+										<div class="daily-item__title">Jigsaw Game</div>
+									</div>
+									<div class="daily-item__desc">Test your knowledge of the world countries.</div>
+									<div class="daily-item__nav">
+										<a href="#" class="custom-btn">Play</a>
+										<div class="star-checkbox">
+											<input class="check-box" type="checkbox" id="star-5" name="game-name" value="game-5">
+											<label for="star-5"></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="daily-item">
+									<div class="daily-item__img">
+										<img src="img/game-2.jpg" alt="Word Game">
+										<div class="daily-item__title">Word Game</div>
+									</div>
+									<div class="daily-item__desc">Test your knowledge of the world countries.</div>
+									<div class="daily-item__nav">
+										<a href="#" class="custom-btn">Play</a>
+										<div class="star-checkbox">
+											<input class="check-box" type="checkbox" id="star-6" name="game-name" value="game-6">
+											<label for="star-6"></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="daily-item">
+									<div class="daily-item__img">
+										<img src="img/game-1.jpg" alt="Jigsaw Game">
+										<div class="daily-item__title">Jigsaw Game</div>
+									</div>
+									<div class="daily-item__desc">Test your knowledge of the world countries.</div>
+									<div class="daily-item__nav">
+										<a href="#" class="custom-btn">Play</a>
+										<div class="star-checkbox">
+											<input class="check-box" type="checkbox" id="star-7" name="game-name" value="game-7">
+											<label for="star-7"></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="daily-item">
+									<div class="daily-item__img">
+										<img src="img/game-2.jpg" alt="Word Game">
+										<div class="daily-item__title">Word Game</div>
+									</div>
+									<div class="daily-item__desc">Test your knowledge of the world countries.</div>
+									<div class="daily-item__nav">
+										<a href="#" class="custom-btn">Play</a>
+										<div class="star-checkbox">
+											<input class="check-box" type="checkbox" id="star-8" name="game-name" value="game-8">
+											<label for="star-8"></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="daily-item">
+									<div class="daily-item__img">
+										<img src="img/game-1.jpg" alt="Jigsaw Game">
+										<div class="daily-item__title">Jigsaw Game</div>
+									</div>
+									<div class="daily-item__desc">Test your knowledge of the world countries.</div>
+									<div class="daily-item__nav">
+										<a href="#" class="custom-btn">Play</a>
+										<div class="star-checkbox">
+											<input class="check-box" type="checkbox" id="star-9" name="game-name" value="game-9">
+											<label for="star-9"></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="daily-item">
+									<div class="daily-item__img">
+										<img src="img/game-2.jpg" alt="Word Game">
+										<div class="daily-item__title">Word Game</div>
+									</div>
+									<div class="daily-item__desc">Test your knowledge of the world countries.</div>
+									<div class="daily-item__nav">
+										<a href="#" class="custom-btn">Play</a>
+										<div class="star-checkbox">
+											<input class="check-box" type="checkbox" id="star-10" name="game-name" value="game-10">
+											<label for="star-10"></label>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+			</section>
 
-				<div class="game-item">
-					<div class="game-item__img">
-						<img src="img/game-2.png" alt="Word Game">
+			<section class="games">
+				<div class="games__header">
+					<div class="games__title">Uundgåelige spil</div>
+					<a href="#" class="games__all">
+						Se alle
+					</a>
+				</div>
+				<div class="games-list">
+					<div class="game-item">
+						<div class="game-item__img">
+							<img src="img/game-1.jpg" alt="Jigsaw Game">
+						</div>
+						<div class="game-item__text">
+							<div class="game-item__title">Jigsaw Game</div>
+							<div class="game-item__desc">Test your knowledge of the world countries.</div>
+							<div class="game-item__nav">
+								<a href="#" class="custom-btn">Play</a>
+								<div class="star-checkbox">
+									<input class="check-box" type="checkbox" id="star-11" name="game-name" value="game-11" checked>
+									<label for="star-11"></label>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div>
-						<div class="game-item__title">Word Game</div>
-						<div class="game-item__desc">Test your knowledge of the world countries.</div>
-						<div class="game-item__nav">
-							<button class="btn">Play</button>
-							<div class="star-checkbox"><input class="check-box" type="checkbox" id="star-7" name="Caller Voice"
-									value="game-7">
-								<label for="star-7"></label>
+
+					<div class="game-item">
+						<div class="game-item__img">
+							<img src="img/game-2.jpg" alt="Word Game">
+						</div>
+						<div class="game-item__text">
+							<div class="game-item__title">Word Game</div>
+							<div class="game-item__desc">Test your knowledge of the world countries.</div>
+							<div class="game-item__nav">
+								<a href="#" class="custom-btn">Play</a>
+								<div class="star-checkbox"><input class="check-box" type="checkbox" id="star-12" name="game-name"
+										value="game-12">
+									<label for="star-12"></label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="game-item">
+						<div class="game-item__img">
+							<img src="img/game-2.jpg" alt="Word Game">
+						</div>
+						<div class="game-item__text">
+							<div class="game-item__title">Word Game</div>
+							<div class="game-item__desc">Test your knowledge of the world countries.</div>
+							<div class="game-item__nav">
+								<a href="#" class="custom-btn">Play</a>
+								<div class="star-checkbox"><input class="check-box" type="checkbox" id="star-13" name="game-name"
+										value="game-13">
+									<label for="star-13"></label>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="game-item">
+						<div class="game-item__img">
+							<img src="img/game-1.jpg" alt="Jigsaw Game">
+						</div>
+						<div class="game-item__text">
+							<div class="game-item__title">Jigsaw Game</div>
+							<div class="game-item__desc">Test your knowledge of the world countries.</div>
+							<div class="game-item__nav">
+								<a href="#" class="custom-btn">Play</a>
+								<div class="star-checkbox">
+									<input class="check-box" type="checkbox" id="star-14" name="game-name" value="game-name">
+									<label for="star-14"></label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="game-item">
+						<div class="game-item__img">
+							<img src="img/game-1.jpg" alt="Jigsaw Game">
+						</div>
+						<div class="game-item__text">
+							<div class="game-item__title">Jigsaw Game</div>
+							<div class="game-item__desc">Test your knowledge of the world countries.</div>
+							<div class="game-item__nav">
+								<a href="#" class="custom-btn">Play</a>
+								<div class="star-checkbox">
+									<input class="check-box" type="checkbox" id="star-15" name="game-name" value="game-15" checked>
+									<label for="star-15"></label>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-
-				<div class="game-item">
-					<div class="game-item__img">
-						<img src="img/game-1.png" alt="Jigsaw Game">
-					</div>
-					<div>
-						<div class="game-item__title">Jigsaw Game</div>
-						<div class="game-item__desc">Test your knowledge of the world countries.</div>
-						<div class="game-item__nav">
-							<button class="btn">Play</button>
-							<div class="star-checkbox">
-								<input class="check-box" type="checkbox" id="star-8" name="Caller Voice" value="game-86">
-								<label for="star-8"></label>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="game-item">
-					<div class="game-item__img">
-						<img src="img/game-1.png" alt="Jigsaw Game">
-					</div>
-					<div>
-						<div class="game-item__title">Jigsaw Game</div>
-						<div class="game-item__desc">Test your knowledge of the world countries.</div>
-						<div class="game-item__nav">
-							<button class="btn">Play</button>
-							<div class="star-checkbox">
-								<input class="check-box" type="checkbox" id="star-9" name="Caller Voice" value="game-9" checked>
-								<label for="star-9"></label>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+			</section>
+		</div>
 	</div>
-
-	</section>
-	<div class="toolbar">
-		<a href="#" class="toolbar-item active">
-			<div class="toolbar-item__icon toolbar-item__icon_games"></div>
-			<div class="toolbar-item__text">Games</div>
-		</a>
-		<a href="#" class="toolbar-item">
-			<div class="toolbar-item__icon toolbar-item__icon_favorites"></div>
-			<div class="toolbar-item__text">Favorites</div>
-		</a>
-		<a href="#" class="toolbar-item">
-			<div class="toolbar-item__icon toolbar-item__icon_highscore"></div>
-			<div class="toolbar-item__text">Highscore</div>
-		</a>
-		<a href="#" class="toolbar-item">
-			<div class="toolbar-item__icon toolbar-item__icon_prizes"></div>
-			<div class="toolbar-item__text">Prizes</div>
-		</a>
-	</div>
-	</div>
-	</div>
-
 	<script>
-		let mainColor = "#DC7052"; // Hex color
-		let secondaryColor = "#979797"; // Hex color
+		let mainColor = "#DC7052"; // Hex color of as and background
+		let accentColor = "#ED5E36"; // Hex color of a hover
+		let secondaryColor = "#979797"; // Hex grey color 
+		let pageBgColor = "#f6f6f6"; // Hex color of page background
+		let iconTextColor = "#8b8b8b"; // Hex color of text and icons
 	</script>
-	<script src="js/app.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/redesign-scripts.js"></script>
 </body>
 
 </html>
